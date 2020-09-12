@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+.navbar{
+    border-bottom: 3px solid rgb(32, 228, 120);
+}
+#home::before{
+    background: url(jesus-kiteque-wn-KYaHwcis-unsplash.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+#about::before{
+    background: url(khadeeja-yasser-9jLYl1TmZAg-unsplash.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.1;
+}
+#portfolio::before{
+    background: url(icons8-team-yTwXpLO5HAA-unsplash.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.3;
+}
+#contact::before{
+    background: url(miles-burke-idhx-MOCDSk-unsplash.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.3;
+}
+.name-info h1:nth-child(3){
+    color: black;
+}
+.name-info h1{
+    text-align: center;
+}
+.name-info h1:nth-child(2){
+    margin-top: 2px;
+}
+.img-self{
+    display: block;
+    margin-top: 2.6em;
+    text-align: center;
+}
+.img-self img{
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+}
+#span-1{
+    font-size: 4rem;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 600;
+    color: black;
+}
+#span-2{
+    font-size: 4rem;
+    font-family: 'Playfair Display SC', serif;
+    color: rgb(108, 15, 196);
+}
+#span-3{
+    font-size: 1.3rem;
+    color: black;
+}
+
+#home,#contact,#about,#portfolio{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+#portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name-info{
+    height: 100%;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home{
+    width: 100%;
+}
+#about{
+    min-height: fit-content;
+    display: grid;
+    height:fit-content;
+    position: relative;
+    grid-template-areas: 'title-1 title-1 title-1 title-1'
+                        'skills skills skills skills'
+                        'info info set set';
+}
+
+.title-1{
+    grid-area: title-1;
+    text-align: center;
+}
+#set{
+    padding: 30px;
+    grid-area: set;
+}
+.skills{
+    grid-area: skills;
+    display: grid;
+    grid-template-areas: 'skill1 skill2 skill3 skill4';
+}
+.skill1
+{
+    grid-area: skill1;
+    align-items: center;
+    justify-content: center;
+}
+.skill2
+{
+    grid-area: skill2;
+}
+.skill3
+{
+    grid-area: skill3;
+}
+.skill4
+{
+    grid-area: skill4;
+}
+#info{
+    grid-area:info;
+}
+.img img{
+    height: 100px;
+    width: 100px;
+}
+.img{
+    margin: 4px;
+    text-align: center;
+}
+.name-skill{
+    display: block;
+    font-size: 3em;
+    text-align: center;
+}
+.des{
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'EB Garamond', serif;
+}
+.form1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.c1{
+    display: block;
+    font-size: 4rem;
+    padding-top: 4rem;
+    color: rebeccapurple;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+font-family: 'IM Fell Double Pica SC', serif;
+    text-decoration: underline;
+}
+#q1{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+.input{
+    text-align: center;
+    margin: 2px;
+}
+#form2{
+    margin-top:20px;
+}
+.input input,.input textarea{
+    background-color: transparent;
+    width: 400px;
+}
+#sub{
+    color: yellow;
+    background-color: red;
+}
+#sub:hover{
+    background-color: rgb(48, 2, 2);
+    border:3px solid black;
+}
+
+#p1 img{
+    display: inline;
+    height: 40px;
+}
+#projects{
+    margin: auto;
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+}
+#p1{
+    height: 100%;
+    margin: 0;
+    border: 2px solid black;
+}
+#p1 a{
+    display: block;
+    width: 60%;
+
+    margin: auto;
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: greenyellow;
+    border:2px solid black;
+    border-radius: 4px;
+}
+#p1 a:hover{
+    background-color: green;
+    color: gold;
+}
+#p1 img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#p1 div{
+    position: relative;
+    margin: auto;
+    bottom: 250px;
+    color: red;
+    font-size: 22px;
+    font-weight: bolder;
+    visibility: hidden;
+}
+#p1:hover div{
+    visibility: visible;
+}
+#p1:hover img{
+    visibility: hidden;
+}
+.lang span{
+    font-size: 1.3em;
+    text-align: center;
+}
+.lang{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.reset img{
+    height:auto;
+    width: auto;
+    border-radius: 30%;
+}
+#iam{
+    display: block;
+    color: rgb(90, 37, 238);
+    text-align: center;
+    font-size: 3em;
+}
+#iam-1{
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'EB Garamond', serif;
+}
+#set{
+    display: grid;
+    align-items: center;
+}
+.progress {
+    border: 2px solid black;
+}
+@media (max-width:800px)
+{
+    #about{
+        grid-template-areas: 'title-1 title-1 title-1 title-1'
+                            'skills skills skills skills'
+                            'info info info info'
+                            'set set set set';
+    }
+    .skills{
+        grid-template-areas: 'skill1 skill1 skill1 skill1'
+                            'skill2 skill2 skill2 skill2'
+                            'skill3 skill3 skill3 skill3'
+                            'skill4 skill4 skill4 skill4';
+    }
+    .input input,.input textarea{
+        width: 100%;
+    }
+    #span-1{
+        font-size: 3rem;
+        color: black;
+    }
+    #span-2{
+        font-size: 3rem;
+        color: rgb(221, 21, 228);
+    }
+}
