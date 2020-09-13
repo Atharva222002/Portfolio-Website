@@ -199,16 +199,13 @@ font-family: 'IM Fell Double Pica SC', serif;
 }
 #q1{
     display: block;
-    font-size: 25px;
+    font-size: 1.6em;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 1px;
 }
 .input{
     text-align: center;
     margin: 2px;
-}
-#form2{
-    margin-top:20px;
 }
 .input input,.input textarea{
     background-color: transparent;
@@ -305,6 +302,22 @@ font-family: 'IM Fell Double Pica SC', serif;
 }
 .progress {
     border: 2px solid black;
+}
+#c2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 1em;
+}
+#c2 img{
+    height:auto;
+    max-height: 50px;
+    max-width: 100px;
+}
+#c2 a:nth-child(2),#c2 a:nth-child(3){
+    margin-left: 2em;
 }
 @media (max-width:800px)
 {
